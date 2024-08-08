@@ -4,7 +4,6 @@ import {useForm} from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Button } from "@material-tailwind/react";
-import { useNavigate } from 'react-router-dom'
 
 const  Addtm = () => {
       const UserSchema = z.object({
@@ -44,7 +43,7 @@ const  Addtm = () => {
         placeholder='Enter your name'
         id='name'
         {...register('name')}
-        className={`bg-sky-800 mt-1 block focus:shadow-md focus:shadow-white text-white mt-1 block w-full px-3 py-2 border ${errors.name? 'border-red-500':'border-gray-300'} rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`} />
+        className={`bg-sky-800 mt-1 block focus:shadow-md focus:shadow-white text-white w-full px-3 py-2 border ${errors.name? 'border-red-500':'border-gray-300'} rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`} />
         {errors.name && <span className="text-red-500 text-sm">{errors.name.message}</span>}
       </div>
 

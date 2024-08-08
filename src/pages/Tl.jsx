@@ -24,11 +24,11 @@ const Tl = () => {
 
   return (
     <>
-      <h1 className='text-white text-center text-2xl font-bold drop-shadow-glow'>Team Member Dashboard</h1>
+      <h1 className='text-white text-center my-4  text-2xl font-bold drop-shadow-glow'>Team Member Dashboard</h1>
       
 
-      <div className=' pt-4 text-white max-h-72 overflow-y-scroll scrollbar-hide border-rounded-lg border-white mx-auto'>
-        <table className='border-2 min-w-full  border-rounded-lg border-white ml-auto mr-auto'>
+      <div className='  text-white max-h-80 w-2/3 overflow-y-scroll scrollbar-hide border-4 border-white border-rounded-2xl mx-auto'>
+        <table className='border-2 w-full  border-rounded-lg border-white ml-auto mr-auto'>
           <thead className='text-center text-black sticky top-0 border-2 border-rounded-lg border-white bg-white'>
             <tr className='border-2 border-white'>
               <th className='border-2 border-white py-2 px-4'>Task</th>
