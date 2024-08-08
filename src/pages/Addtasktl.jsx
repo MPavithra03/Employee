@@ -3,11 +3,11 @@ import {useForm} from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Button } from "@material-tailwind/react";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 const Addtask = () => {
 
-  const [selectedOption, setSelectedOption]  = useState('');
+  const [selectedOption, setSelectedOption]  = useState();
 
  
 
@@ -59,7 +59,7 @@ const handleChange = (e) => setSelectedOption(e.target.value)
 
         <div className=' justify-around block'>
         <div className="mb-4">
-        <label htmlFor="start" className="block text-sm font-medium text-white">Start</label>
+        <label htmlFor="start" className="block text-sm font-medium text-white">Starting Date</label>
         <input
           id="start"
           type="date"
@@ -70,7 +70,7 @@ const handleChange = (e) => setSelectedOption(e.target.value)
       </div>
 
       <div className="mb-4 ">
-        <label htmlFor="end" className="block text-sm font-medium text-white">End</label>
+        <label htmlFor="end" className="block text-sm font-medium text-white">End Date</label>
         <input
           id="end"
           type="date"

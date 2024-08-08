@@ -84,7 +84,7 @@ const Member = () => {
     <>
       <div className='flex relative'>
         
-        <div className={`${open ? 'w-72' : 'w-6'} md:w-64 duration-300 h-screen bg-indigo-300 relative flex flex-col items-center py-2`}>
+        <div className={`${open ? 'w-72' : 'w-6'} lg:top-0  lg:sticky relative md:w-64 duration-300 h-screen bg-indigo-300  flex flex-col items-center py-2`}>
           <img
             src="../../right-arrow.png"
             className={`absolute cursor-pointer -right-3 top-9 w-7 ${open && 'rotate-180'} md:hidden`}
@@ -107,9 +107,9 @@ const Member = () => {
         </div>
 
         {/* Main Content */}
-        <div className={`p-3 flex-1 h-screen text-white ${open && 'blur-md'} md:blur-none`}>
-          <h1 className='text-center font-bold text-2xl'>Task Details</h1>
-          <div className="bg-sky-900 gap-4 mt-2 p-2 rounded-lg shadow-md">
+        <div className={`p-3 flex-1  h-screen text-white ${open && 'blur-md'} md:blur-none`}>
+          <h1 className='sticky top-0 text-center font-bold text-2xl'>Task Details</h1>
+          <div className="bg-sky-900 sticky top-7  gap-4 mt-2 p-2 rounded-lg shadow-md">
             <h2 className="text-xl font-semibold mb-2 text-center">Quick Stats</h2>
             <p className='text-center'>Tasks Assigned: 5</p>
             <p className='text-center'>Tasks Completed: 3</p>
@@ -164,7 +164,7 @@ const Member = () => {
         </div>
 
         {open && (
-          <div className="fixed inset-0 bg-opacity-50 z-10 md:hidden" onClick={() => setOpen(false)}></div>
+          <div className="top-0inset-0 bg-opacity-50 z-10 md:hidden" onClick={() => setOpen(false)}></div>
         )}
       </div>
     </>

@@ -3,7 +3,8 @@ import {useForm} from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Button } from "@material-tailwind/react";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+import AddTaskIcon from '@mui/icons-material/AddTask';
 
 const Addtask = () => {
 
@@ -32,12 +33,12 @@ const handleChange = (e) => setSelectedOption(e.target.value)
 
     return (
       <>
-      <div className='px-4 py-3 md:w-1/2 border-white rounded-2xl border-2 mr-auto ml-auto'>
+      <div className='px-2 py-3 ml-auto top-0 mr-auto w-3/5 md:w-2/5 md-h-2/5 border-white rounded-2xl border-2 shadow-white shadow-md'>
       <h1 className='text-white text-center text-2xl font-bold'>Add New Task </h1>
         <form onSubmit={handleSubmit(onSubmit)} className='p-4 max-w-lg mx-auto items-center ' >
         
         <div className="mb-4">
-          <label htmlFor="task" className="block text-sm font-medium text-white">Task: </label>
+          <label htmlFor="task" className="block text-sm font-medium text-white">Task : </label>
           
           <input
             placeholder='Enter task name'
@@ -49,7 +50,7 @@ const handleChange = (e) => setSelectedOption(e.target.value)
           {errors.task && <span className="text-red-500 text-sm">{errors.task.message}</span>}
         </div>
         <div className='mb-4'>
-          <label htmlFor="overview" className='block text-sm font-medium text-white'> Overview</label>
+          <label htmlFor="overview" className='block text-sm font-medium text-white'> Overview :</label>
           <input id='overview'
                  type='overview'
           {...register('overview')}
@@ -59,7 +60,7 @@ const handleChange = (e) => setSelectedOption(e.target.value)
 
         <div className=' justify-around block'>
         <div className="mb-4">
-        <label htmlFor="start" className="block text-sm font-medium text-white">Start</label>
+        <label htmlFor="start" className="block text-sm font-medium text-white">Starting Date :</label>
         <input
           id="start"
           type="date"
@@ -70,7 +71,7 @@ const handleChange = (e) => setSelectedOption(e.target.value)
       </div>
 
       <div className="mb-4 ">
-        <label htmlFor="end" className="block text-sm font-medium text-white">End</label>
+        <label htmlFor="end" className="block text-sm font-medium text-white">End Date :</label>
         <input
           id="end"
           type="date"
@@ -82,7 +83,7 @@ const handleChange = (e) => setSelectedOption(e.target.value)
         </div>
 
         <div className=' text-white mb-4'>
-        <label htmlFor='assign' className='block text-sm font-medium '>Assigned To</label>
+        <label htmlFor='assign' className='block text-sm font-medium '>Assigned To :</label>
        <div className='flex pt-1.5'>
         
       

@@ -31,11 +31,11 @@ const Login = () => {
         <img src="../../public/two.png" className='mx-auto w-4/5 h-4/5' alt="" /> 
       </div >
       
-      <div className='px-2 py-3 mx-auto md:w-3/5 border-white rounded-2xl border-2 shadow-white shadow-md'>
+      <div className='px-2 py-3 ml-auto top-0 mr-auto w-3/5 md:w-2/5 md-h-2/5 border-white rounded-2xl border-2 shadow-white shadow-md'>
       <h1 className='text-white text-center text-2xl font-bold'>Login </h1>
       <form onSubmit={handleSubmit(onSubmit)} className='p-4 max-w-lg mx-auto items-center ' >
         
-      <div className="mb-4  ">
+      <div className="mb-4 ">
         <label htmlFor="email" className="block text-sm font-medium text-white">Email</label>
         <div className="relative mt-1">
         <div className="absolute my-auto mt-2 left-0 flex items-center pl-3 pointer-events-none">
@@ -71,13 +71,16 @@ const Login = () => {
       <Button ripple={true} type="submit" className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-sky-600 duration-300 bg-sky-800 px-4 text-white py-2  font-medium rounded-md">Login</Button>
       </div>
       </form>
-      </div>
-      </div>
-      <div className='text-white text-center lg:text-right'>
-        <p className=''>Not registered?</p>
-        <p className='pl-4'><Link to='/registration'>Go to Registration</Link></p>
+      <div className=' text-center '>
+        <p className='text-white'>Not registered?</p>
+        <p className=' text-violet-400'><Link to='/registration'>Go to Registration</Link></p>
 
       </div>
+      
+      </div>
+      
+      </div>
+      
 
       <div className="mt-4">
             <button 
@@ -112,3 +115,8 @@ const Login = () => {
   )
 }
 export default Login;
+
+
+
+
+
