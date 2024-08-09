@@ -24,6 +24,7 @@ const Reset = () => {
       };
   return (
     <>
+    <div className='px-2 py-3 ml-auto top-0 mr-auto w-3/5 md:w-2/5 md-h-2/5 border-white rounded-2xl border-2 shadow-white shadow-md'>
        <h1 className='text-white items-center font-bold text-center text-2xl'>Password Reset</h1>
        <form onSubmit={handleSubmit(onSubmit)} className='p-4 max-w-lg mx-auto items-center' >
        <div className='mb-4'>
@@ -58,8 +59,9 @@ const Reset = () => {
       <Button ripple={true} type="submit" className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-sky-600 duration-300 bg-sky-800 px-4 text-white py-2  font-medium rounded-md">Reset</Button>
       </div>
        </form>
+       </div>
     
-       <div className='text-gray-500 text-center'>
+       <div className='mt-4 text-gray-500 text-center'>
       
       <p className='text-gray-500'>
       <Link to="/login">Goto login</Link></p>
